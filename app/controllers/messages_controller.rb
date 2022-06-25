@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController
   def index
-    messages = Messages.all
+    messages = Message.all
     messages_array = messages.map do |message|
       {
         id: message.id,
